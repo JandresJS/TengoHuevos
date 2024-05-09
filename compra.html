@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Hay huevos </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <style>
+    body{
+    font: 40px/2Arial, Helvetica,sans-serif;
+    padding:10;
+    
+    margin:0;
+    background-color:red;
+    color:green;
+  }
+  
+  /* Global */
+  .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+  }
+  
+  ul{
+  display: inline;
+    margin:0;
+    padding:0;
+  }
+  
+  .button_1{
+    height:38px;
+    background:yellow;
+    border:0;
+    padding-left: 10px;
+    padding-right:10px;
+    color:green;
+  }
+  
+  .dark{
+    padding:15px;
+    background:#35424a;
+    color:yellow;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  
+  /* Header **/
+  header{
+    background:yellow;
+    color:red;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:#e8491d 3px solid;
+  }
+  
+  header a{
+    color:red;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+  }
+  
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding{
+    float:left;
+  }
+  
+  header #branding h1{
+    margin:0;
+  }
+  
+  header nav{
+    float:blue;
+    margin-top:10px;
+  }
+  
+  header .highlight, header .current a{
+    color:green;
+    font-weight:bold;
+    fond-size: 4em;
+  }
+  
+  header a:hover{
+    color:red;
+    font-weight:bold;
+  }
+  
+  /* Showcase */
+  #showcase{
+    min-height:200px;
+    background:url('../img/gallinaFondo.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:blue;
+  }
+  
+  #showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+  }
+  
+  #showcase p{
+    font-size:30px;
+    color: red;
+  }
+  
+  /* Newsletter */
+  #newsletter{
+    padding:15px;
+    color:#ffffff;
+    background:#35424a
+  }
+  
+  #newsletter h1{
+    float:left;
+  }
+  
+  #newsletter form {
+    float:right;
+    margin-top:15px;
+  }
+  
+  #newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+  }
+  
+  /* Boxes */
+  #boxes{
+    margin-top:20px;
+  }
+  
+  #boxes .box{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+    color: yellow;
+  }
+  
+  #boxes .box img{
+    width:200px;
+  }
+  
+  /* Sidebar */
+  aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top:10px;
+  }
+  
+  aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width:90%;
+    padding:5px;
+  }
+  
+  /* Main-col */
+  article#main-col{
+    float:left;
+    width:65%;
+  }
+  .page-title {
+    color: #ee0928;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(234, 240, 238);
+  }
+  .como {
+     color: red;
+  }
+  .vendemos {
+    color: red;
+
+  }
+  .puedes {
+    color:red;
+
+  }
+  .button_1 {
+    color: rgb(228, 11, 11);
+    font-size: 17px;
+    font-weight: 900;
+  }
+  .texto1 {
+    font-size: 18px;
+
+  }
+  .texto2 {
+    font-size: 18px;
+
+  }
+  .texto3 {
+    font-size: 18px;
+
+  }
+  
+  /* Services */
+  ul#services li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+  }
+  
+  footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:green;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+  @media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+      float:none;
+      text-align:center;
+      width:100%;
+    }
+  
+    header{
+      padding-bottom:20px;
+    }
+  
+    #showcase h1{
+      margin-top:40px;
+    }
+  
+    #newsletter button, .quote button{
+      display:block;
+      width:100%;
+    }
+  
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+      width:100%;
+      margin-bottom:5px;
+    }
+  }
+  </style>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">La granja de Isis</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Curiosidades</a></li>
+            <li class="current"><a href="services.html">Comprar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Acumula puntos huevos</h1>
+          <ul id="services">
+            <li>
+              <img src="huevo (3).png" width="70" height="70" > 
+              <h3 class="como">Cómo funciona?</h3>
+              <p class="texto1">Con la compra habitual el el cliente suma puntos que le permiten obtener premios en producto u ofertas especiales.</p>
+						  <p>Más información </p>
+            </li>
+            <li>
+              <img src="huevo (6).png" width="70" height="70" > 
+              <h3 class="vendemos">Vendemos huevos por unidad?</h3>
+              <p class="texto2">Principalmente vendemos cartones de 12 o 24 unidades; sin embargo, cuando nuestros pickapp viejan por las rutas, podemos vender por unidad directamente al consumidor .</p>
+						  <p>Más información </p>
+            </li>
+            <li>
+              <img src="granja.jpeg" width="250" height="150" > 
+              <h3 class="puedes">Puedes comprar en nuestra granja</h3>
+              <p class="texto3">Principalmente salimis a distribuir los productos, sin embargo, algunos días los clientes pueden venir directamente a nuestra granaja.</p>
+						  <p>Más información </p>
+            </li>
+          </ul>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Haga su pedido</h3>
+            <form class="quote">
+  						<div>
+  							<label>Nombre</label><br>
+  							<input type="text" placeholder="Nombre">
+  						</div>
+  						<div>
+  							<label>Email</label><br>
+  							<input type="email" placeholder="escriba su correo">
+  						</div>
+  						<div>
+  							<label>Describa su pedido</label><br>
+  							<textarea placeholder="Numero de telefono, la cantidad de huevos y la fecha que los necesita."></textarea>
+  						</div>
+  						<button class="button_1" type="submit">Enviar</button>
+					</form>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p>La granja de Isis, Copyright &copy; 2024</p>
+    </footer>
+  </body>
+</html>

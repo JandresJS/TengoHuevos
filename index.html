@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Quiero huevos</title>  La granja de Isis</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/manoConHuevos.png" width="400" >
+  </head>
+  <style>
+    body{
+      font: 100px/2Arial, Helvetica,sans-serif;
+    padding:10;
+    margin-right: 20px;
+    margin:0;
+    background-color:red;
+    color:rgb(28, 0, 128);
+  }
+  
+  /* Global */
+  .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+  }
+  
+  ul{
+  display: inline;
+    margin:0;
+    padding:0;
+  }
+  
+  .button_1{
+    height:38px;
+    background:yellow;
+    border:0;
+    padding-left: 10px;
+    padding-right:10px;
+    color:green;
+  }
+  
+  .dark{
+    padding:15px;
+    background:#35424a;
+    color:yellow;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  
+  /* Header **/
+  header{
+    background:yellow;
+    color:rgb(255, 0, 200);
+    padding-top:70px;
+    min-height:70px;
+    border-bottom:#e8491d 5px solid;
+  }
+  
+  header a{
+    color:rgb(25, 0, 255);
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:14px;
+    display:inline;
+    
+  }
+  
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  header #branding{
+    float:left;
+  }
+  
+  header #branding h1{
+    margin:0;
+
+  }
+  
+  header nav{
+    float:blue;
+    margin-top:20px;
+  }
+  
+  header .highlight, header .current a{
+    color:rgb(240, 17, 28);
+    font-weight:bold;
+    font-size: 1.5em;
+    
+  }
+  
+  header a:hover
+  {font-size: 18px;
+       
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:blue;
+  }
+  
+  #showcase h1{
+    margin-top:120px;
+    font-size:55px;
+    margin-bottom:10px;
+  }
+  
+  .font-size  {
+    font-size: 18px;
+    margin-bottom:30px;
+
+  }
+  
+ 
+  /* Boxes */
+  #boxes{
+    margin-top:20px;
+  }
+  
+  #boxes .box{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+    color: yellow;
+  }
+  
+  #boxes .box img{
+    width:200px;
+  }
+  
+  /* Sidebar */
+  aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top:10px;
+  }
+  
+  aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width:90%;
+    padding:5px;
+  }
+  
+  /* Main-col */
+  article#main-col{
+    float:left;
+    width:65%;
+  }
+  
+  /* Services */
+  ul#services li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+  }
+  .huevo {
+    font-size: 10px;
+  }
+  .parrafo {
+    font-size: 25px;
+    color: rgb(238, 240, 235);
+  }
+  footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:green;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+  @media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+      float:none;
+      text-align:center;
+      width:100%;
+    }
+  
+    header{
+      padding-bottom:20px;
+    }
+  
+    #showcase h1{
+      margin-top:40px;
+    }
+  
+    #newsletter button, .quote button{
+      display:block;
+      width:100%;
+    }
+  
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+      width:100%;
+      margin-bottom:5px;
+    }
+  }
+  </style>
+ 
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <img src="GalloYgallinas.jpeg" width="350" height="150" > 
+          <h1><span class="highlight">El mejor producto</span> </h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Inicio</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="compra.html">Comprar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <img src="gallina.png" width="100" height="100" > 
+        <h1 class="huevo">    Huevos de origen 100% natural</h1 >
+        <p class="parrafo">La granja de Isis.<br>
+        Somos una empresa familiar que sabemos cuidar las gallinas.</p>
+      </div>
+    </section>
+
+  
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="gallinas2.webp"  >
+          <h3>Rutas de distribución</h3>
+          <p>Repartimos en las tiendas de todo Usulután. Pero si tu compra es mayor a 40 dólares vamos a San Miguel y Zacatecoluca. Si tu compra supera los 60 dólares vamos a La Unión y San Salvador.Si tu compra supera los 80 dólares vamos donde sea.</p>
+        </div>
+        <div class="box">
+          <img src="gallinas2.jpg">
+          <h3>Reserve su pedido</h3>
+          <p>Nuestros huevos se venden incluso antes que las gallinas los pongan, reservar tu pedido te garantiza que tus huevos estén en la fecha planificada</p>
+        </div>
+        <div class="box">
+          <img src="gallinaComiendo.jpg">
+          <h3>Si pasa la voz recibe descuentos</h3>
+          <p>Si nos ayudas a vender más optendrás descuentos significativos. Y su ya eres cliente, gozarás de promociones </p>
+          <img src="manoConHuevos.jpeg" width="30" height="150" > 
+        </div>
+        
+      </div>
+    </section>
+    
+
+    <footer>
+      <p>La granja de Isis, Copyright &copy; 2024</p>
+    </footer>
+  </body>
+</html>
